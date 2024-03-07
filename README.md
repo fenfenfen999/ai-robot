@@ -54,3 +54,6 @@ npm rm --global packageName
 // 查看所有全局链接
 npm ls --global --depth 0
 
+### 发布
+npm login
+npm publish
