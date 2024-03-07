@@ -27,3 +27,24 @@ rollup tsx 报错：RollupError: Expression expected (Note that you need plugins
 
 安装并正确配置了处理 TypeScript 的 Rollup 插件; typeScript 和 @rollup/plugin-typescript。
 
+## NPM
+
+### 本地link
+可尽量使用npx
+
+#### 安装 
+npm包目录： npm link
+
+引用包目录： npm link npm包的package.json的name
+
+#### 删除
+引用包目录：npm unlink toolbox
+
+npm包目录：npm unlink
+
+// 强制解除全局链接
+npm rm --global packageName
+
+// 查看所有全局链接
+npm ls --global --depth 0
+
