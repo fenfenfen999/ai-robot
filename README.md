@@ -27,6 +27,12 @@ rollup tsx 报错：RollupError: Expression expected (Note that you need plugins
 
 安装并正确配置了处理 TypeScript 的 Rollup 插件; typeScript 和 @rollup/plugin-typescript。
 
+ReferenceError: require is not defined
+
+有commonjs或者
+
+如果您的项目中使用了动态 import() 语法来异步加载模块，确保 Rollup 能够正确处理这些模式。您可能需要 @rollup/plugin-dynamic-import-vars 插件或其他相关插件来支持动态导入。
+
 ## NPM
 
 ### 本地link
